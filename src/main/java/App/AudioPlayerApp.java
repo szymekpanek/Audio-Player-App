@@ -1,13 +1,18 @@
+package App;
+
+import SoundPlayer.SoundPlayer;
 import db.AudioRepository;
 import GUI.GUI;
+import java.io.IOException;
 
 public class AudioPlayerApp {
-    public static void main(String[] args) {
+    public boolean run;
+
+    public static void main(String[] args) throws IOException {
         AudioRepository audioRepository = new AudioRepository();
-        GUI menu = new GUI();
+
 
         boolean run = true;
-        int counter = 0;
 
         while(run) {
             switch(GUI.showMenuAndReadChoose()) {
@@ -15,7 +20,7 @@ public class AudioPlayerApp {
                     GUI.showAudioList(audioRepository.getSoundMap());
                     break;
                 case "2":
-                    System.out.println("Number 2 works");
+                    SoundPlayer.showSoundPlayerMenu();
                     break;
                 case "3":
                     System.out.println("Goodbye");
