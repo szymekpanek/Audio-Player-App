@@ -31,6 +31,8 @@ public class AudioRepository {
         return soundMap;
     }
 
-
+    public String getSoundFileName(String note) {
+        return soundMap.get(note);
+    }
 
 }
