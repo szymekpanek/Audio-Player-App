@@ -22,7 +22,7 @@ public class AudioRepository {
         addSound("G", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/g.wav");
         addSound("G#", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/g#.wav");
         addSound("A", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/A.wav");
-        addSound("A#", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/bb.wav");
+        addSound("BB", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/bb.wav");
         addSound("B", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/b.wav");
         addSound("C2", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/c2.wav");
     }

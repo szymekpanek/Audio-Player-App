@@ -3,16 +3,19 @@ package App;
 import SoundPlayer.SoundPlayer;
 import db.AudioRepository;
 import GUI.GUI;
+
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.IOException;
 
 public class AudioPlayerApp {
     public boolean run;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, UnsupportedAudioFileException, LineUnavailableException {
         AudioRepository audioRepository = new AudioRepository();
+        SoundPlayer player = new SoundPlayer();
         boolean run = true;
         boolean flag = true;
-
 
         while (run) {
             switch (GUI.showMenuAndReadChoose()) {
@@ -39,13 +42,7 @@ public class AudioPlayerApp {
                                 break;
 
                             default:
-                                if (audioRepository.getSoundMap().containsKey(userInput)) {
-                                    String soundFileName = audioRepository.getSoundFileName(userInput);
-                                    System.out.println("Odtwarzam dźwięk: " + soundFileName);
-                                    // Dodaj kod do odtwarzania dźwięku na podstawie soundFileName
-                                } else {
-                                    System.out.println("Wrong choose !!");
-                                }
+                                player.playSound(userInput);
                                 break;
                         }
                     }
@@ -62,10 +59,5 @@ public class AudioPlayerApp {
                     break;
             }
         }
-
-
-
-
-
     }
 }
