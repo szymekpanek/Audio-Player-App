@@ -9,8 +9,6 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.IOException;
 
 public class AudioPlayerApp {
-    public boolean run;
-
     public static void main(String[] args) throws IOException, UnsupportedAudioFileException, LineUnavailableException {
         AudioRepository audioRepository = new AudioRepository();
         SoundPlayer player = new SoundPlayer();
@@ -29,6 +27,7 @@ public class AudioPlayerApp {
 
                         switch (userInput) {
                             case "L":
+                                System.out.print("\033c");
                                 GUI.showAudioList(audioRepository.getSoundMap());
                                 break;
 

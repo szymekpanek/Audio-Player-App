@@ -12,19 +12,20 @@ public class AudioRepository {
     public AudioRepository() {
         soundMap = new HashMap<>();
 
-        addSound("C", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/c.wav");
-        addSound("C#", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/c#.wav");
-        addSound("D", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/d.wav");
-        addSound("D#", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/d#.wav");
-        addSound("E", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/e.wav");
-        addSound("F", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/f.wav");
-        addSound("F#", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/f#.wav");
-        addSound("G", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/g.wav");
-        addSound("G#", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/g#.wav");
-        addSound("A", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/A.wav");
-        addSound("BB", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/bb.wav");
-        addSound("B", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/b.wav");
-        addSound("C2", "/Users/osx/IdeaProjects/AudioPlayer/src/main/resources/wav_files/c2.wav");
+        String path = "src/main/resources/wav_files/";
+        addSound("C", path + "c.wav");
+        addSound("C#", path + "c#.wav");
+        addSound("D", path + "d.wav");
+        addSound("D#", path + "d#.wav");
+        addSound("E", path + "e.wav");
+        addSound("F", path + "f.wav");
+        addSound("F#", path + "f#.wav");
+        addSound("G", path + "g.wav");
+        addSound("G#", path + "g#.wav");
+        addSound("A", path + "A.wav");
+        addSound("BB", path + "bb.wav");
+        addSound("B", path + "b.wav");
+        addSound("C2", path + "c2.wav");
     }
 
     public Map<String, String> getSoundMap() {
