@@ -23,21 +23,14 @@ public class AudioPlayerApp {
 
                 case "2":
                     while (flag) {
-                        String userInput = GUI.showSoundPlayerMenu().toUpperCase(); // Zakładam, że klucze są w wielkich literach
-
+                        String userInput = GUI.showSoundPlayerMenu().toUpperCase();
                         switch (userInput) {
                             case "L":
-                                System.out.print("\033c");
                                 GUI.showAudioList(audioRepository.getSoundMap());
                                 break;
 
                             case "Q":
-                                flag = false;  // Zakończ pętlę wewnętrzną
-                                break;
-
-                            case "R":
-                                System.out.println("Odtwarzam ostatni dźwięk.");
-                                // Dodaj kod do odtwarzania ostatniego dźwięku
+                                flag = false;
                                 break;
 
                             default:

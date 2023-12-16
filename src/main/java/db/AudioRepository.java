@@ -11,7 +11,6 @@ public class AudioRepository {
     }
     public AudioRepository() {
         soundMap = new HashMap<>();
-
         String path = "src/main/resources/wav_files/";
         addSound("C", path + "c.wav");
         addSound("C#", path + "c#.wav");
