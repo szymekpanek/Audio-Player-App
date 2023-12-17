@@ -1,6 +1,5 @@
 package Intervals;
 
-import GUI.GUI;
 import SoundPlayer.SoundPlayer;
 import db.AudioRepository;
 
@@ -57,57 +56,19 @@ public class Intervals_Game {
         System.out.println("Random Interval: " + intervalDescription);
 
         switch (randomKey){
-            case "U":
-                playInteval("C", "C");
-                break;
-
-            case "m2":
-                playInteval("C", "C#");
-                break;
-
-            case "M2":
-                playInteval("C", "D");
-                break;
-
-            case "m3":
-                playInteval("C", "D#");
-                break;
-
-            case "M3":
-                playInteval("C", "E");
-                break;
-
-            case "P4":
-                playInteval("C", "F");
-                break;
-
-            case "T":
-                playInteval("C", "F#");
-                break;
-
-            case "P5":
-                playInteval("C", "G");
-                break;
-
-            case "m6":
-                playInteval("C", "G#");
-                break;
-
-            case "M6":
-                playInteval("C", "A");
-                break;
-
-            case "m7":
-                playInteval("C", "BB");
-                break;
-
-            case "M7":
-                playInteval("C", "B");
-                break;
-
-            case "8":
-                playInteval("C", "C2");
-                break;
+            case "U"  -> playInteval("C", "C");
+            case "m2" -> playInteval("C", "C#");
+            case "M2" -> playInteval("C", "D");
+            case "m3" -> playInteval("C", "D#");
+            case "M3" -> playInteval("C", "E");
+            case "P4" -> playInteval("C", "F");
+            case "T"  -> playInteval("C", "F#");
+            case "P5" -> playInteval("C", "G");
+            case "m6" -> playInteval("C", "G#");
+            case "M6" -> playInteval("C", "A");
+            case "m7" -> playInteval("C", "BB");
+            case "M7" -> playInteval("C", "B");
+            case "8"  -> playInteval("C", "C2");
         }
     }
 
@@ -133,12 +94,9 @@ public class Intervals_Game {
         }
     }
 
-    public static void main(String[] args) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
-        Intervals_Game game = new Intervals_Game();
-        game.Intervals_Map();
-//        game.showIntervalsMap();
-
-
-        game.Game();
-    }
+//    public static void main(String[] args) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
+//        Intervals_Game game = new Intervals_Game();
+//        game.Intervals_Map();
+//        game.Game();
+//    }
 }
