@@ -35,4 +35,8 @@ public class AudioRepository {
         return soundMap.get(note);
     }
 
+    public String getNote(){
+        return soundMap.keySet().toString();
+    }
+
 }
